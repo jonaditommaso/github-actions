@@ -1,14 +1,27 @@
+# formato yamel
+
+# nombre
 name: Say hello
 
+
+# un evento, cuando se tienen que activar?
 on:
+  # que evento escucha
   push:
+  # en que ramas
     branches:
       - main
 
+# que tiene que hacer
 jobs:
+  # nombre
   hello_world:
+    # en que sistema operativo funcionara
     runs-on: ubuntu-18.04
+
+    # pasos
     steps:
+      # aqui el name es opcional
       - name: Echo the message
         run: |
           echo "Hola midu!"
